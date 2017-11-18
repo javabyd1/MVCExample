@@ -20,25 +20,20 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package com.sda.mvcexample;
+package com.sda.mvcexample.view;
+
+
+import com.sda.mvcexample.model.GiantModel;
 
 /**
  * 
- * Nourishment enumeration
+ * GiantView displays the giant
  *
  */
-public enum Nourishment {
+public class GiantView {
 
-  SATURATED("saturated"), HUNGRY("hungry"), STARVING("starving");
 
-  private String title;
-
-  Nourishment(String title) {
-    this.title = title;
-  }
-
-  @Override
-  public String toString() {
-    return title;
+  public void displayGiant(GiantModel giant) {
+    System.out.println(giant.toString());
   }
 }

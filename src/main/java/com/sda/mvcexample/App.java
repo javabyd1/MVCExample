@@ -22,6 +22,13 @@
  */
 package com.sda.mvcexample;
 
+import com.sda.mvcexample.controller.GiantController;
+import com.sda.mvcexample.model.Fatigue;
+import com.sda.mvcexample.model.GiantModel;
+import com.sda.mvcexample.model.Health;
+import com.sda.mvcexample.model.Nourishment;
+import com.sda.mvcexample.view.GiantView;
+
 /**
  * 
  * Model-View-Controller is a pattern for implementing user interfaces. It divides the application

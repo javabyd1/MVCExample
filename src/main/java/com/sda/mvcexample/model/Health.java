@@ -20,51 +20,25 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package com.sda.mvcexample;
+package com.sda.mvcexample.model;
 
 /**
  * 
- * GiantModel contains the giant data
+ * Health enumeration
  *
  */
-public class GiantModel {
+public enum Health {
 
-  private Health health;
-  private Fatigue fatigue;
-  private Nourishment nourishment;
+  HEALTHY("healthy"), WOUNDED("wounded"), DEAD("dead");
 
-  GiantModel(Health health, Fatigue fatigue, Nourishment nourishment) {
-    this.health = health;
-    this.fatigue = fatigue;
-    this.nourishment = nourishment;
-  }
+  private String title;
 
-  public Health getHealth() {
-    return health;
-  }
-
-  public void setHealth(Health health) {
-    this.health = health;
-  }
-
-  public Fatigue getFatigue() {
-    return fatigue;
-  }
-
-  public void setFatigue(Fatigue fatigue) {
-    this.fatigue = fatigue;
-  }
-
-  public Nourishment getNourishment() {
-    return nourishment;
-  }
-
-  public void setNourishment(Nourishment nourishment) {
-    this.nourishment = nourishment;
+  Health(String title) {
+    this.title = title;
   }
 
   @Override
   public String toString() {
-    return String.format("The giant looks %s, %s and %s.", health, fatigue, nourishment);
+    return title;
   }
 }

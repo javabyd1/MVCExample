@@ -20,18 +20,51 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package com.sda.mvcexample;
-
+package com.sda.mvcexample.model;
 
 /**
  * 
- * GiantView displays the giant
+ * GiantModel contains the giant data
  *
  */
-public class GiantView {
+public class GiantModel {
 
+  public Health health;
+  public Fatigue fatigue;
+  public Nourishment nourishment;
 
-  public void displayGiant(GiantModel giant) {
-    System.out.println(giant.toString());
+  public GiantModel(Health health, Fatigue fatigue, Nourishment nourishment) {
+    this.health = health;
+    this.fatigue = fatigue;
+    this.nourishment = nourishment;
+  }
+
+  public Health getHealth() {
+    return health;
+  }
+
+  public void setHealth(Health health) {
+    this.health = health;
+  }
+
+  public Fatigue getFatigue() {
+    return fatigue;
+  }
+
+  public void setFatigue(Fatigue fatigue) {
+    this.fatigue = fatigue;
+  }
+
+  public Nourishment getNourishment() {
+    return nourishment;
+  }
+
+  public void setNourishment(Nourishment nourishment) {
+    this.nourishment = nourishment;
+  }
+
+  @Override
+  public String toString() {
+    return String.format("The giant looks %s, %s and %s.", health, fatigue, nourishment);
   }
 }

@@ -20,7 +20,13 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package com.sda.mvcexample;
+package com.sda.mvcexample.controller;
+
+import com.sda.mvcexample.model.Fatigue;
+import com.sda.mvcexample.model.GiantModel;
+import com.sda.mvcexample.model.Health;
+import com.sda.mvcexample.model.Nourishment;
+import com.sda.mvcexample.view.GiantView;
 
 /**
  * 
@@ -29,8 +35,8 @@ package com.sda.mvcexample;
  */
 public class GiantController {
 
-  private GiantModel giant;
-  private GiantView view;
+  public GiantModel giant;
+  public GiantView view;
 
   public GiantController(GiantModel giant, GiantView view) {
     this.giant = giant;

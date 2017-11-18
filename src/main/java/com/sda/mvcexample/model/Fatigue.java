@@ -20,20 +20,20 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package com.sda.mvcexample;
+package com.sda.mvcexample.model;
 
 /**
  * 
- * Health enumeration
+ * Fatigue enumeration
  *
  */
-public enum Health {
+public enum Fatigue {
 
-  HEALTHY("healthy"), WOUNDED("wounded"), DEAD("dead");
+  ALERT("alert"), TIRED("tired"), SLEEPING("sleeping");
 
   private String title;
 
-  Health(String title) {
+  Fatigue(String title) {
     this.title = title;
   }
 
